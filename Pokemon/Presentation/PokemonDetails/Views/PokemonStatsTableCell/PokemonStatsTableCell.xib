@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PokemonStatsTableCell" rowHeight="55" id="N9O-mY-Wab" customClass="PokemonStatsTableCell" customModule="Pokemon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N9O-mY-Wab" id="ZDC-3x-iv5">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="55"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8WO-aw-lIZ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="55"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X0J-M0-cJX" userLabel="StatName">
+                                <rect key="frame" x="12" y="8" width="0.0" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="gZw-zz-oaW">
+                                <rect key="frame" x="189" y="24.666666666666668" width="150" height="6"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="6" id="5EJ-1r-G6c"/>
+                                    <constraint firstAttribute="width" constant="150" id="aBD-W4-gYE"/>
+                                </constraints>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMb-2D-59i" userLabel="StatValue">
+                                <rect key="frame" x="351" y="27.666666666666668" width="30" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="fKo-fr-iq6"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YMb-2D-59i" secondAttribute="trailing" constant="12" id="08d-ar-qZT"/>
+                            <constraint firstItem="gZw-zz-oaW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="X0J-M0-cJX" secondAttribute="trailing" constant="12" id="4ah-9I-81U"/>
+                            <constraint firstItem="X0J-M0-cJX" firstAttribute="top" secondItem="8WO-aw-lIZ" secondAttribute="top" constant="8" id="AuW-1Q-bqo"/>
+                            <constraint firstItem="gZw-zz-oaW" firstAttribute="centerY" secondItem="X0J-M0-cJX" secondAttribute="centerY" id="Kgc-1o-Q4N"/>
+                            <constraint firstAttribute="bottom" secondItem="X0J-M0-cJX" secondAttribute="bottom" constant="8" id="RLn-ah-HMx"/>
+                            <constraint firstItem="X0J-M0-cJX" firstAttribute="centerY" secondItem="8WO-aw-lIZ" secondAttribute="centerY" id="RYr-QM-L3m"/>
+                            <constraint firstItem="YMb-2D-59i" firstAttribute="centerY" secondItem="gZw-zz-oaW" secondAttribute="centerY" id="Sgr-yU-IrY"/>
+                            <constraint firstItem="X0J-M0-cJX" firstAttribute="leading" secondItem="8WO-aw-lIZ" secondAttribute="leading" constant="12" id="rqM-NN-oem"/>
+                            <constraint firstItem="YMb-2D-59i" firstAttribute="leading" secondItem="gZw-zz-oaW" secondAttribute="trailing" constant="12" id="wQx-wb-0Hn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8WO-aw-lIZ" firstAttribute="top" secondItem="ZDC-3x-iv5" secondAttribute="top" id="BHi-OQ-vCV"/>
+                    <constraint firstAttribute="bottom" secondItem="8WO-aw-lIZ" secondAttribute="bottom" id="DJ8-wV-xHh"/>
+                    <constraint firstItem="8WO-aw-lIZ" firstAttribute="leading" secondItem="ZDC-3x-iv5" secondAttribute="leading" id="ZO3-CI-T9Q"/>
+                    <constraint firstAttribute="trailing" secondItem="8WO-aw-lIZ" secondAttribute="trailing" id="xjR-st-daS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="ZDC-3x-iv5" secondAttribute="bottom" id="CrF-Lf-N3k"/>
+                <constraint firstItem="ZDC-3x-iv5" firstAttribute="top" secondItem="N9O-mY-Wab" secondAttribute="top" id="TDd-gK-GpZ"/>
+                <constraint firstItem="ZDC-3x-iv5" firstAttribute="leading" secondItem="N9O-mY-Wab" secondAttribute="leading" id="bhf-7n-k8g"/>
+                <constraint firstAttribute="trailing" secondItem="ZDC-3x-iv5" secondAttribute="trailing" id="mWP-Ln-sCH"/>
+            </constraints>
+            <connections>
+                <outlet property="statBar" destination="gZw-zz-oaW" id="Io0-R5-Zum"/>
+                <outlet property="statNameLabel" destination="X0J-M0-cJX" id="CeX-0S-784"/>
+                <outlet property="statValueLabel" destination="YMb-2D-59i" id="7d9-LC-orw"/>
+            </connections>
+            <point key="canvasLocation" x="-219.08396946564883" y="-286.26760563380282"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
