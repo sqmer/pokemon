@@ -2,15 +2,15 @@
 Pokemon Listing and Details Application
 
 ## About
-A small application such as this can be done using almost any architecture (MVC, MVVM, VIPER...).  Since this was a excercise to showcase my knowledge I decided to go with the Clean Architecture 
+A small application such as this can be done using almost any architecture (MVC, MVVM, VIPER...).  Since this was an excercise to showcase my knowledge I decided to go with the Clean Architecture 
 
-This architecture Decouple the Domain from the Data and Presentation modules, this gives us the flexibility to change any of the latter two without affecing the main business of the application. In other words the data can instead of an API Endpoint call can become a database or JSON file and both the Domain and Presentation are unaffected, same applues for Presentation.
+This architecture decouples the Domain from the Data and Presentation modules, which gives us the flexibility to change any of the latter two without affecing the main business of the application. In other words the data can instead of an API Endpoint call become a database or JSON file and both the Domain and Presentation are unaffected, same applies for Presentation.
 
-Also makes sure the dependency is from the Domain to the Presentation.
+Also it makes sure the dependency is from the Domain to the Presentation.
 
 Due to the above reasons this architecture is maintainable and scalable.
 
-Besides from that the Infrastructure folder are Business Agnostic which means they can be reused in any other applicaion, even better would be converting them to a library.
+Besides that the Infrastructure folder are Business Agnostic which means they can be reused in any other applicaion, even better would be converting them to a library.
 
 I only included Unit Test for one class and some mocks as an example. Ideally all classes should have Unit Tests covering 100% of the functionality. 
 
@@ -25,7 +25,7 @@ Third Party frameworks whether from Swift Package Manager or Cocoapods have eith
 https://webhook.site/#!/view/b099222f-9c03-428c-b5cc-dfa1fadab974/6832a7e9-c1ea-4956-91a3-10703f325d05/1
 
 ## Room for Improvements
-- Complete UnitTests
+- Complete Unit Tests
 - Add UITests
 - Finish TODOs
 - Create Router Class for navigation
